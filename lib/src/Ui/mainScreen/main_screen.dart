@@ -11,7 +11,7 @@ class _HomeScreenState extends State<HomeScreen> {
   int _index = 0;
   @override
   Widget build(BuildContext context) {
-    List<Widget> _a = [
+    List<Widget> _slected = [
       Home(),
       Home(),
       Home(),
@@ -20,9 +20,9 @@ class _HomeScreenState extends State<HomeScreen> {
     return Directionality(
       textDirection: TextDirection.rtl,
       child: Scaffold(
-        body: _a.elementAt(_index),
+        body: _slected.elementAt(_index),
         bottomNavigationBar: BottomNavigationBar(
-          iconSize: 40,
+          iconSize: 30,
           backgroundColor: Colors.red,
           onTap: onTabTapped,
           currentIndex: _index,
